@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
+    
+
 <title>My Portfolio</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <!-- Custom Fonts-->
 <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Work+Sans:400,700" rel="stylesheet">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
-<!--CSS-->
+<link href="https://fonts.googleapis.com/css?family=Akronim|Montserrat|Nanum+Gothic" rel="stylesheet">
+    <!--CSS-->
 <link rel="stylesheet" href="css/w3.css" type='text/css'>
 <link rel="stylesheet" href="css/style.css" type="text/css">
+    
 </head>
  <body>
   <!-- Navbar-->
@@ -18,10 +22,10 @@
       <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
       <i class="fa fa-bars"></i>
     </a>
-      <a href="#home" class="w3-bar-item">HOME</a>
-      <a href="#about" class="w3-bar-item w3-hide-small">ABOUT</a>
-      <a href="#portfolioHeader" class="w3-bar-item w3-hide-small">PORTFOLIO</a>
-      <a href="#contactHeader" class="w3-bar-item w3-hide-small">CONTACT</a>
+      <a href="#home" class="w3-bar-item" id="navhome">HOME</a>
+      <a href="#about" class="w3-bar-item w3-hide-small" id="navabout">ABOUT</a>
+      <a href="#portfolioHeader" class="w3-bar-item w3-hide-small" id="navport">PORTFOLIO</a>
+      <a href="#contactHeader" class="w3-bar-item w3-hide-small" id="navcontact">CONTACT</a>
     </a>
     </div>
 
@@ -36,43 +40,47 @@
   <!-- First Parallax Image with Logo Text -->
   <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
     <div class="w3-display-middle">
-      <h1 class="w3-center w3-padding-large w3-wide" style="background-color: #242423">Jane Programmer</h1>
+        
+        <button class="mybutton w3-center w3-padding-name w3-wide" style="background-color: #242423; ; " type="button" data-hover="Kasi Whetts-Franks" data-active="I'M ACTIVE"><span>카시 위츠 프랭크</span></button>
+        
+        <!-- <h1 class="w3-center w3-padding-large w3-wide" style="background-color: #242423"><span>카시 위츠 프랭크</span></h1> -->
+        
     </div>
   </div>
 
   <!-- Container (About Section) -->
   <div class="w3-content w3-container w3-padding-64" id="about">
     <h3 class="w3-center">ABOUT ME</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
-      in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-      consequat.
-    </p>
+      <quote>&#10077;<i>Kasi is a usually shy individual but isn't afraid to speak her mind when the topic of video games, shrimps, and aesthetics. She likes coding and hopes to get more into programming to create her own games.&#10078;  - E.D.</i>
+    </quote>
     <div class="w3-row">
       <div class="w3-col m6 w3-center w3-padding-large">
-        <p><b><i class="fa fa-user w3-margin-right"></i>Jane Programmer</b></p><br>
-        <img src="http://nb2pw.org/wp-content/uploads/2017/05/placeholder-headshot.png" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="300" height="250">
+        <p><b><i class="fa fa-user w3-margin-right"></i>Kasi Whetts-Franks<br>est. in 1998</b></p><br>
+        <img src="../img/Sunglasses" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="300" height="250">
       </div>
 
       <!-- Hide this text on small devices -->
       <div class="w3-col m6 w3-hide-small w3-padding-large">
-        <p>I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit,
-          sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p>I’m a web developer that tries to bring different Aesthetics to my work. I was first introduced to coding when I was in the 10th grade through the Hour of Code. 
+            Ever since then, I participated in the Hour of Code at my school each year as well as learning how to code on the side. 
+            As of now besides this Coded by Kids program, I’m focusing on obtaining my Applied Visual Design certification from freeCodeCamp.</p>
       </div>
     </div>
     <p class="w3-large w3-center w3-padding-16">My Skills:</p>
-    <p class="w3-wide"><i class="fa fa-database"></i>Back End Development</p>
+      <div id="windows">
+          
+    <p class="w3-wide"><i class="fa fa-database"></i>Applied Visual Design</p>
     <div>
-      <div class="w3-container w3-padding-small` w3-center bar-color" style="width:90%">90%</div>
+      <div class="w3-container w3-padding-small` w3-center bar-color" style="width:43.7%">43.7%</div>
     </div>
-    <p class="w3-wide"><i class="fa fa-laptop"></i>Front End Development</p>
+    <p class="w3-wide"><i class="fa fa-laptop"></i>Windows</p>
     <div>
-      <div class="w3-container w3-padding-small w3-center bar-color" style="width:70%">70%</div>
+      <div class="w3-container w3-padding-small w3-center bar-color" style="width:98%">98%</div>
     </div>
-    <p class="w3-wide"><i class="fas fa-chalkboard-teacher"></i>Teaching</p>
+    <p class="w3-wide"><i class="fas fa-chalkboard-teacher"></i>Macintosh+</p>
     <div>
-      <div class="w3-container w3-padding-small w3-center bar-color" style="width:85%">85%</div>
+      <div class="w3-container w3-padding-small w3-center bar-color" style="width:100%">420%</div>
+          </div>
     </div>
   </div>
 
@@ -84,54 +92,56 @@
   </div>
 
   <!-- Container (Portfolio Section) -->
+    
+        
   <div class="w3-content w3-container w3-padding-64" id="portfolio">
     <h3 class="w3-center">MY WORK</h3>
-    <p class="w3-center"><em>Here's some of my latest work.<br> Click on a project to learn more</em></p><br>
+    <p class="w3-center"><em>Here's some of my latest work of commercialism.<br> Click on a project to learn more of the A E S T H E T I C</em></p><br>
 
     <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
     <div class="w3-row-padding w3-center">
       <div class="w3-col m3 projectContainer">
         <a href="#">
-          <img src="http://cohenwoodworking.com/wp-content/uploads/2016/09/image-placeholder-500x500.jpg" style="width:100%" class="w3-hover-opacity">
+          <img src="../img/Statue+Head.png" style="width:100%" class="w3-hover-opacity">
           <div class="overlay">
-            <h5>Project Title</h5>
-            <p>Project Description. Just a sentance or two.</p>
+            <h5>リサフランク420 / 現代のコンピュ</h5>
+            <p></in>Lisa Frank 420/Monder Computing is a popular vaporwave song from the Album Floral Shoppe (フローラルの専門店) by MACINTOSH PLUS. </p>
           </div>
         </a>
       </div>
 
       <div class="w3-col m3 projectContainer">
         <a href="#">
-          <img src="http://cohenwoodworking.com/wp-content/uploads/2016/09/image-placeholder-500x500.jpg" style="width:100%" class="w3-hover-opacity">
+          <img src="../img/semi-mall.jpg" style="width:100%" class="w3-hover-opacity">
           <div class="overlay">
-            <h5>Project Title</h5>
-            <p>Project Description. Just a sentance or two.</p>
+            <h4>Abandoned Malls</h4>
+            <p></p>
           </div>
         </a>
       </div>
 
       <div class="w3-col m3 projectContainer">
         <a href="#">
-          <img src="http://cohenwoodworking.com/wp-content/uploads/2016/09/image-placeholder-500x500.jpg" style="width:100%" class="w3-hover-opacity">
+          <img src="../img/Sailor.jpg" style="width:100%" class="w3-hover-opacity " >
           <div class="overlay">
-            <h5>Project Title</h5>
-            <p>Project Description. Just a sentance or two.</p>
+            <h5>Anime</h5>
+            <p></p>
           </div>
         </a>
       </div>
 
       <div class="w3-col m3 projectContainer">
         <a href="#">
-          <img src="http://cohenwoodworking.com/wp-content/uploads/2016/09/image-placeholder-500x500.jpg" style="width:100%" class="w3-hover-opacity">
+          <img src="../img/98.png" style="width:100%" class="w3-hover-opacity">
           <div class="overlay">
-            <h5>Project Title</h5>
-            <p>Project Description. Just a sentance or two.</p>
+            <h5>Windows 98</h5>
+            <p></p>
           </div>
         </a>
       </div>
     </div>
   </div>
-
+    
   <!-- Third Parallax Image with Portfolio Text -->
   <div class="bgimg-3 w3-display-container w3-opacity-min" id="contactHeader">
     <div class="w3-display-middle">
@@ -146,11 +156,11 @@
     <div class="w3-row w3-padding-32 w3-section">
       <div class="w3-col m6 w3-container w3-center">
         <i class="fas fa-phone w3-jumbo"></i>
-        <h4>(215)-555-5555</h4>
+        <h4> CALL (1-800)-GET-A E S T H E T I C S TODAY!</h4>
       </div>
       <div class="w3-col m6 w3-container w3-center">
         <i class="far fa-envelope w3-jumbo"></i>
-        <h4>address@email.com</h4>
+        <h4>AESTHETIC@gmail.com</h4>
       </div>
     </div>
   </div
@@ -159,10 +169,10 @@
   <footer class="w3-center w3-black">
     <a href="#home" class="w3-button"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
     <div class="w3-xxlarge w3-section">
-      <i class="fab fa-facebook w3-hover-opacity"></i>
-      <i class="fab fa-instagram w3-hover-opacity"></i>
-      <i class="fab fa-twitter w3-hover-opacity"></i>
-      <i class="fab fa-linkedin w3-hover-opacity"></i>
+      <i class="fab fa-facebook w3-hover-opacity whiteicon"></i>
+      <i class="fab fa-instagram w3-hover-opacity blueicon"></i>
+      <i class="fab fa-twitter w3-hover-opacity pinkicon"></i>
+      <i class="fab fa-linkedin w3-hover-opacity ticon"></i>
     </div>
   </footer>
 

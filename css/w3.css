@@ -208,6 +208,7 @@ html {
 .w3-content {
   max-width: 980px;
   margin: auto
+    
 }
 
 .w3-rest {
@@ -439,6 +440,10 @@ html {
 
 .w3-padding-large {
   padding: 12px 24px !important
+}
+/*hey this is a thing we added for padding for our name button*/ 
+.w3-padding-name {
+    padding: 24px 48px !important
 }
 
 .w3-padding-16 {
